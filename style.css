@@ -1,0 +1,249 @@
+/*
+Theme Name: Landing Page Design Agency
+Theme URI: 
+Author: Pablo (Paul) Vargas
+Author URI: http://www.wpmagma.com
+Description: A cool landing page for web design agencies.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, flexible-width, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
+Text Domain: landingpagedesignagency
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	line-height: 1.5;
+	padding: 0px;
+	border: 0px;
+	margin: 0px;
+	background-color: #FFFDE0
+}
+
+/*Global*/
+.container {
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+}
+
+header{
+	background-color: #4D2C73;
+	color: #FFFDE0;
+	padding-top: 30px; 
+	min-height: 70px;
+	border-bottom: #5F7607 3px solid;
+}
+
+header a{
+	color: #FFFDE0;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 16px;
+	padding: 0 20px 0 20px;
+}
+
+header #brand{
+	float: left;
+}
+
+header #brand h1{
+	margin: 0;
+	font-weight: normal;
+} 
+
+header nav{
+	float: right;
+	margin-top: 15px;
+}
+
+.highlight, .current {
+	color: #190133;
+	font-weight: bold;
+}
+
+header a:hover{
+	color: #190133;
+	font-weight: bold;
+}
+
+/* Showcase*/
+#showcase {
+	min-height: 400px;
+	background: url("./images/showcase.jpg") no-repeat 0 -400px;
+	text-align: center;
+	color: #FFFDE0;
+}
+#showcase h1 {
+	font-size: 50px;
+	margin-top: 100px;
+	margin-bottom: 10px;
+}
+#showcase p {
+	font-size: 17px;
+}
+
+/*OptIn Form*/
+#optinform {
+	padding: 15px;
+	background-color: #190133
+}
+#optinform h1 {
+	color: #FFFDE0;
+	font-size: 17px;
+	float: left;
+}
+#optinform form {
+	float: right;
+	margin-top: 10px;
+}
+#optinform input[type="email"] {
+	padding: 5px;
+	height: 23px;
+	width: 250px;
+}
+#optinform button[type="submit"]{
+	height: 38px;
+	background-color: #3A4800;
+	border: 0px;
+	color: #FFFDE0;
+	padding-left: 15px;
+	padding-right: 15px; 
+}
+
+/*Services*/
+#Services .Box {
+	float: left;
+	margin-top: 15px;
+	width: 33.33%;
+	text-align: center;
+}
+
+/*About Page Content*/
+article#contentabout {
+	float: left;
+	width: 65%;
+	text-align: justify;
+}
+
+aside#aboutside {
+	float: right;
+	width: 30%;
+	padding: 10px;
+	margin-top: 65px;
+	background-color: #4D2C73; 
+	color: #FFFDE0;
+	border: #5F7607 3px solid;
+}
+
+/*Services Page Content*/
+#contentservices {
+	float: left;
+	width: 65%;
+	text-align: justify;
+}
+
+#sideform {
+	float: right;
+	width: 30%;
+	padding: 10px;
+	margin-top: 62px;
+	background-color: #4D2C73; 
+	color: #FFFDE0;
+	border: #5F7607 3px solid;
+}
+
+div.servicecontainer {
+	padding: 10px;
+	border: #5F7607 1px solid;
+	margin: 10px;
+}
+
+aside#sideform .quote input, aside#sideform .quote textarea {
+	width: 90%;
+	padding: 5px;
+}
+#sideform button[type="submit"]{
+	height: 38px;
+	background-color: #3A4800;
+	border: 0px;
+	color: #FFFDE0;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+/*footer*/
+footer {
+	padding: 5px;
+	color: #ffffff;
+	background-color: #4D2C73;
+	text-align: center;
+}
+
+/*Media Queries*/
+@media (max-width: 768px){
+	header #brand, header nav{
+		float: none;
+		text-align: center;
+		width: 100%;
+	}
+	header a{
+		float: none;
+		width: 100%;
+		text-align: center;
+		padding: 7px;
+	}
+	header{
+		width: 100%;
+		padding: 10px;
+	}
+	#showcase h1{
+		margin-top: 35px;
+		font-size: 250%;
+	}
+	#showcase {
+		min-height: 350px;
+	}
+	#optinform h1{
+		text-align: center;
+	}
+	#optinform form, #optinform input[type="email"], #optinform button[type="submit"]{
+		float: none;
+		width: 100%;
+		margin: 5px;
+	}
+	section #services .box{
+		float: none;
+		width: 100%;
+		text-align: center;
+	}
+	/*About Page Content*/
+	article#contentabout {
+		float: none;
+		width: 100%;
+	}
+	aside#aboutside {
+		float: none;
+		width: 100%;
+		padding: 5px;
+		margin-top: 30px;
+		margin-bottom: 15px;
+	}
+	/*Services Page Content*/
+	#contentservices {
+	float: none;
+	width: 100%;
+	}
+
+	#sideform {
+	float: none;
+	width: 100%;
+	padding: 5px;
+	margin-top: 30px;
+	margin-bottom: 15px;
+	}
+}
